@@ -17,8 +17,7 @@
       <div class="menu-year">
         <div class="menu-year-label">${year}</div>
         ${groups[year].map(item => `
-          <a class="menu-link ${item.date === activeDate ? "active" : ""}"
-             href="?date=${item.date}">
+          <a class="menu-link ${item.date === activeDate ? "active" : ""}" href="?date=${item.date}">
             ${item.label}
           </a>
         `).join("")}
@@ -46,7 +45,29 @@
     `).join("");
   }
 
+  function teacherQA(items){
+    if(!items || !items.length) return "";
+    return `
+      <section class="lesson-section">
+        <h2>06. 수업 중 헷갈렸던 표현, 정확히 정리</h2>
+        ${items.map(item => `
+          <div class="card teacher-answer">
+            <div class="label">TEACHER QUESTION → CLEAR ANSWER</div>
+            <div class="phrase">${item.question}</div>
+            <p class="note">${item.answer}</p>
+            <div class="answer-examples">
+              ${item.examples.map(ex => `<div class="answer-example">${ex}</div>`).join("")}
+            </div>
+          </div>
+        `).join("")}
+      </section>`;
+  }
+
   function renderLesson(data){
+    const hasQA = data.teacherQuestions && data.teacherQuestions.length;
+    const practiceNo = hasQA ? "07" : "06";
+    const checklistNo = hasQA ? "08" : "07";
+
     document.title = `${data.date} · ${data.title} | Mimi English Study`;
     app.innerHTML = `
       <article>
@@ -72,8 +93,7 @@
                   <div class="ko">${item.ko}</div>
                 </div>
               </div>
-            </div>
-          `).join("")}
+            </div>`).join("")}
         </section>
 
         <section class="lesson-section">
@@ -90,12 +110,11 @@
                 <p>${item.body}</p>
               </div>
               ${item.examples.map(ex => `<div class="note">${ex}</div>`).join("")}
-            </div>
-          `).join("")}
+            </div>`).join("")}
         </section>
 
         <section class="lesson-section">
-          <h2>04. 자주 쓰는 표현 바꿔보기</h2>
+          <h2>04. 오늘 새로 익힐 표현</h2>
           ${cards(data.alternatives)}
         </section>
 
@@ -104,26 +123,25 @@
           <div class="word-grid">${cards(data.vocabulary)}</div>
         </section>
 
+        ${teacherQA(data.teacherQuestions)}
+
         <section class="lesson-section">
-          <h2>06. 오늘의 말하기 패턴</h2>
+          <h2>${practiceNo}. 오늘의 말하기 패턴</h2>
           <div class="practice">
-            ${data.practice.map(([pattern,example],i)=>`
+            ${data.practice.map(([p,e],i)=>`
               <div class="practice-item">
-                <strong>${i+1}. ${pattern}</strong><br />
-                ${example}
-              </div>
-            `).join("")}
+                <strong>${i+1}. ${p}</strong><br>${e}
+              </div>`).join("")}
           </div>
         </section>
 
         <section class="lesson-section">
-          <h2>07. 오늘의 복습 체크</h2>
+          <h2>${checklistNo}. 오늘의 복습 체크</h2>
           <div class="card checklist">
-            ${data.checklist.map(item => `<label><input type="checkbox" /> ${item}</label>`).join("")}
+            ${data.checklist.map(item => `<label><input type="checkbox"> ${item}</label>`).join("")}
           </div>
         </section>
-      </article>
-    `;
+      </article>`;
   }
 
   async function init(){
@@ -132,19 +150,16 @@
       app.innerHTML = `<section class="empty-state">아직 등록된 수업이 없습니다.</section>`;
       return;
     }
-
     const params = new URLSearchParams(location.search);
     const requested = params.get("date");
     const current = lessons.find(item => item.date === requested) || lessons[0];
-
     renderMenu(current.date);
-
     try{
       await loadScript(current.file);
       renderLesson(window.LESSON_DATA);
-    }catch(err){
+    }catch(e){
       app.innerHTML = `<section class="empty-state">수업 파일을 불러오지 못했습니다.</section>`;
-      console.error(err);
+      console.error(e);
     }
   }
 
