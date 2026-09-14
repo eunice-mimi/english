@@ -1,4 +1,5 @@
 window.LESSONS = [
+  { date: "2026-09-14", label: "09.14", title: "Flu Season, Eyesight & Learning Choices", file: "./lessons/2026-09-14.js" },
   { date: "2026-09-11", label: "09.11", title: "Hospital Visit, IVs & Historical Drama", file: "./lessons/2026-09-11.js" },
   { date: "2026-09-08", label: "09.08", title: "Cold Symptoms, Suburbs & Work Life", file: "./lessons/2026-09-08.js" },
   { date: "2026-09-02", label: "09.02", title: "AI, Climate Change & Daily Life", file: "./lessons/2026-09-02.js" },
