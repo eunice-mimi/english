@@ -1,0 +1,92 @@
+window.LESSON_DATA = {
+date:"2026-09-15",day:"DAY 06",title:"Seasons, Ondol, Travel & Holiday Benefits",
+description:"오늘은 남편의 감기, 한국과 필리핀의 계절과 기온, 한국식 바닥 난방(온돌), 바닥 생활, 필리핀 여행, 추석·설날, 회사 명절 선물·보너스·퇴직금에 대해 이야기했습니다. 이전 수업에서 반복된 감기 기본 표현은 줄이고 오늘 새롭게 나온 표현을 중심으로 정리했습니다.",
+tags:["날씨·계절","온돌·난방","여행","추석·설날","bonus vs severance pay"],
+corrections:[
+{mine:"I don't have nothing special today.",better:"Nothing special happened today.",ko:"오늘은 별일 없었어."},
+{mine:"I just went to the work.",better:"I just went to work and came back home.",ko:"그냥 출근했다가 집에 왔어."},
+{mine:"I don't have a special thing in week days.",better:"I don't usually do anything special on weekdays.",ko:"평일에는 보통 특별한 일이 없어."},
+{mine:"My husband become a sick today.",better:"My husband started feeling sick today.",ko:"오늘 남편이 아프기 시작했어."},
+{mine:"I think he got cold because of me.",better:"I think he caught my cold.",ko:"내 감기가 남편한테 옮은 것 같아."},
+{mine:"So I did wash dish.",better:"So I did the dishes because that's usually his job.",ko:"그래서 원래 남편 담당인 설거지를 내가 했어."},
+{mine:"How much degree in Philippines?",better:"What's the temperature in the Philippines right now?",ko:"지금 필리핀은 몇 도야?"},
+{mine:"The highest degree.",better:"What's the high today?",ko:"오늘 최고기온이 몇 도야?"},
+{mine:"We had a four season.",better:"We have four distinct seasons in Korea.",ko:"한국에는 뚜렷한 사계절이 있어."},
+{mine:"We spend the money for heating.",better:"We spend a lot of money on heating in winter.",ko:"겨울에는 난방비가 많이 들어."},
+{mine:"We have floor heater.",better:"We use underfloor heating in Korea.",ko:"한국에서는 바닥 난방을 사용해."},
+{mine:"We usually put off the shoes inside house.",better:"We usually take off our shoes indoors.",ko:"집 안에서는 보통 신발을 벗어."},
+{mine:"The air is so dry so I have a nose ache.",better:"The heated air was so dry that the inside of my nose hurt.",ko:"난방 때문에 공기가 너무 건조해서 코 안이 아팠어."},
+{mine:"I had a thin matrix.",better:"I sleep on a thin mattress on the floor.",ko:"나는 바닥에 얇은 매트리스를 깔고 자."},
+{mine:"My house floor made by tile.",better:"The floor in my house is tiled.",ko:"우리 집 바닥은 타일로 되어 있어."},
+{mine:"Have you ever went there?",better:"Have you ever been there?",ko:"거기 가본 적 있어?"},
+{mine:"Why you didn't go there?",better:"Why haven't you been there?",ko:"왜 아직 거기 안 가봤어?"},
+{mine:"What can you take, the ship?",better:"Do you take a ferry to get to another island?",ko:"다른 섬에 갈 때 페리를 타?"},
+{mine:"We want to more diverse landscape.",better:"We want to see more diverse landscapes.",ko:"좀 더 다양한 풍경을 보고 싶어."},
+{mine:"They extend the vacation for the holiday.",better:"They're taking extra days off around the holiday.",ko:"명절에 맞춰 휴가를 더 붙여서 쉬어."},
+{mine:"Company will give a gift holiday.",better:"Companies often give employees holiday gift sets.",ko:"회사에서 직원들에게 명절 선물세트를 주는 경우가 많아."},
+{mine:"I'm not expecting the bonus.",better:"I'm not getting my hopes up about a bonus.",ko:"보너스는 크게 기대하지 않으려고 해."},
+{mine:"We don't have fixing percent.",better:"There's no fixed percentage. It depends on the company.",ko:"정해진 비율은 없고 회사마다 달라."},
+{mine:"It is severance pay not bonus.",better:"That's severance pay, not a bonus.",ko:"그건 보너스가 아니라 퇴직금이야."},
+{mine:"Many teacher they have to matching.",better:"She has to coordinate a lot of teachers and students.",ko:"선생님과 학생들을 많이 매칭하고 조율해야 해."}
+],
+expressions:[
+["I think he caught my cold.","내 감기가 남편한테 옮은 것 같아."],
+["What's the high / low today?","오늘 최고기온 / 최저기온이 몇 도야?"],
+["There's a big temperature swing between day and night.","낮과 밤의 일교차가 커."],
+["We use underfloor heating in Korea.","한국에서는 바닥 난방을 사용해."],
+["The heated air dries out my nose.","난방된 공기 때문에 코가 건조해져."],
+["I sleep on a thin mattress on the floor.","바닥에 얇은 매트리스를 깔고 자."],
+["Have you ever been to Palawan?","팔라완에 가본 적 있어?"],
+["Do you take a ferry to get to another island?","다른 섬으로 갈 때 페리를 타?"],
+["They're taking extra days off around the holiday.","명절 앞뒤로 휴가를 붙여서 쉬어."],
+["Traditional Korean holidays follow the lunar calendar.","한국 전통 명절은 음력을 따라."],
+["Companies often give employees holiday gift sets.","회사에서 직원들에게 명절 선물세트를 주는 경우가 많아."],
+["I'm not getting my hopes up about a bonus.","보너스는 크게 기대하지 않으려고 해."],
+["We receive severance pay when we leave the company.","퇴사할 때 퇴직금을 받아."]
+],
+grammar:[
+{title:"nothing과 이중부정",body:"nothing 자체가 이미 부정이므로 don't와 함께 쓰지 않습니다.",examples:["Nothing special happened today.","I didn't do anything special today."]},
+{title:"go to work",body:"work가 출근이라는 일반적인 의미일 때 관사 the를 붙이지 않습니다.",examples:["I went to work.","I came home after work."]},
+{title:"Have you ever been...?",body:"지금까지의 방문 경험을 물을 때 Have you ever been to + 장소가 자연스럽습니다.",examples:["Have you ever been to Palawan?","I've never been there."]},
+{title:"spend money on",body:"~에 돈을 쓰다는 spend money on + 명사를 씁니다.",examples:["We spend a lot of money on heating.","People spend more on travel during holidays."]}
+],
+alternatives:[
+["He might have caught it from me.","나한테서 옮았을 수도 있어."],
+["It gets chilly in the morning and evening.","아침저녁으로 쌀쌀해져."],
+["Korea has underfloor heating called ondol.","한국에는 온돌이라는 바닥 난방이 있어."],
+["The air gets really dry with forced-air heating.","온풍 난방을 하면 공기가 정말 건조해져."],
+["I'm keeping my expectations low.","기대를 낮게 하고 있어."],
+["It's required by law.","법적으로 의무야."]
+],
+vocabulary:[
+["catch a cold","감기에 걸리다 / 감기가 옮다"],["do the dishes","설거지하다"],
+["high / low","최고기온 / 최저기온"],["temperature swing","기온 변화 / 일교차"],
+["underfloor heating","바닥 난방"],["ondol","한국 전통 바닥 난방"],
+["forced-air heating","온풍식 난방"],["dry out","건조하게 만들다"],
+["mattress","매트리스 ※ matrix가 아님"],["tiled floor","타일 바닥"],
+["landscape","풍경 / 지형"],["exotic","이국적인"],["ferry","여객선 / 페리"],
+["lunar calendar","음력"],["solar calendar","양력"],["holiday gift set","명절 선물세트"],
+["bonus","보너스 / 상여금"],["severance pay","퇴직금"],["coordinate","조율하다"]
+],
+teacherQuestions:[
+{question:"'감기가 남편한테 옮았다'는 transfer라고 해?",answer:"보통 transfer라고 하지 않습니다. 감기가 옮았다는 I think he caught my cold. 또는 He might have caught it from me.가 자연스럽습니다.",examples:["I think he caught my cold.","He might have caught it from me."]},
+{question:"'일교차가 크다'는 어떻게 말해?",answer:"There's a big temperature swing between day and night.가 자연스럽습니다. 아침저녁으로 쌀쌀하다는 It gets chilly in the morning and evening.",examples:["There's a big temperature swing between day and night.","It gets chilly in the morning and evening."]},
+{question:"한국의 '바닥 난방 / 온돌'은 영어로?",answer:"underfloor heating이 가장 이해하기 쉽습니다. 한국 문화를 설명할 때 Korea has a traditional underfloor heating system called ondol.이라고 하면 좋습니다.",examples:["We use underfloor heating in Korea.","It's called ondol."]},
+{question:"'온풍 때문에 코 안이 건조하고 아프다'는?",answer:"nose ache보다는 The heated air dries out my nose. 또는 The inside of my nose gets dry and sore.가 자연스럽습니다.",examples:["The heated air dries out my nose.","The inside of my nose gets dry and sore in winter."]},
+{question:"matrix와 mattress 차이는?",answer:"침대의 매트리스는 mattress /ˈmætrəs/입니다. matrix는 수학·컴퓨터의 '행렬, 구조'라는 다른 단어입니다.",examples:["I sleep on a thin mattress.","This mattress is too thin for my back."]},
+{question:"섬에 가는 배는 ship, boat, ferry 중 뭐가 좋아?",answer:"섬 사이를 정기적으로 사람이나 차량을 운송하는 배는 ferry가 가장 정확합니다. boat는 작은 배를 넓게 가리키고 ship은 큰 선박을 뜻합니다.",examples:["Do you take a ferry to the island?","How long is the ferry ride?"]},
+{question:"'명절에 휴가를 붙여 쓴다'는?",answer:"take extra days off around the holiday 또는 extend the holiday break가 자연스럽습니다.",examples:["She's taking extra days off around Chuseok.","He extended his holiday break to travel."]},
+{question:"bonus와 severance pay 차이는?",answer:"bonus는 급여 외 추가 상여금이고 severance pay는 퇴직 시 지급되는 퇴직 관련 금액입니다. 한국의 퇴직금을 설명할 때 severance pay가 적절합니다.",examples:["Some companies give a holiday bonus.","We receive severance pay when we leave the company."]},
+{question:"'보너스 기대했다가 실망하기 싫다'는?",answer:"I'm not getting my hopes up about a bonus.가 자연스럽습니다. get one's hopes up은 기대감을 너무 높이다라는 뜻입니다.",examples:["I'm not getting my hopes up about a bonus.","I don't want to get my hopes up and be disappointed."]}
+],
+practice:[
+["I think he ___ my cold.","I think he caught my cold."],
+["We spend a lot of money ___ heating.","We spend a lot of money on heating."],
+["We use ___ heating in Korea.","We use underfloor heating in Korea."],
+["Have you ever ___ to Palawan?","Have you ever been to Palawan?"],
+["Do you take a ___ to another island?","Do you take a ferry to another island?"],
+["I'm not getting my hopes ___ about a bonus.","I'm not getting my hopes up about a bonus."],
+["We receive ___ pay when we leave the company.","We receive severance pay when we leave the company."]
+],
+checklist:["catch my cold / catch it from me 연습하기","high, low, temperature swing으로 날씨 설명하기","ondol을 영어 3문장으로 설명하기","mattress와 matrix 구분하기","ferry / boat / ship 차이 복습하기","추석과 음력을 영어로 30초 설명하기","bonus / severance pay 차이를 설명하기"]
+};
