@@ -1,4 +1,5 @@
 window.LESSONS=[
+{date:"2026-09-21",label:"09.21",title:"Monday Meetings, Chuseok Food & Autumn Weather",file:"./lessons/2026-09-21.js"},
 {date:"2026-09-18",label:"09.18",title:"Work, AI Skills & Master's Degree",file:"./lessons/2026-09-18.js"},
 {date:"2026-09-15",label:"09.15",title:"Seasons, Ondol, Travel & Holiday Benefits",file:"./lessons/2026-09-15.js"},
 {date:"2026-09-14",label:"09.14",title:"Flu Season, Eyesight & Learning Choices",file:"./lessons/2026-09-14.js"},
