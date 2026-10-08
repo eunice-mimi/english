@@ -1,4 +1,5 @@
-window.LESSONS=[
+window.LESSONS = [
+{date:"2026-10-06",label:"10.06",title:"Holiday Weekend, Spoiled Food & Healthy Habits",file:"./lessons/2026-10-06.js"},
 {date:"2026-10-01",label:"10.01",title:"Bus Commute, Crowded Transit & Rude People",file:"./lessons/2026-10-01.js"},
 {date:"2026-09-29",label:"09.29",title:"Chuncheon, Spicy Food & Korean Cuisine",file:"./lessons/2026-09-29.js"},
 {date:"2026-09-21",label:"09.21",title:"Monday Meetings, Chuseok Food & Autumn Weather",file:"./lessons/2026-09-21.js"},
